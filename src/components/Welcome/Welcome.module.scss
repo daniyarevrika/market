@@ -1,0 +1,92 @@
+.welcome {
+   display: flex;
+   justify-content: space-between;
+}
+
+.cocteil {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.title {
+   font-weight: 300;
+   font-size: 3.75rem;
+   line-height: 4.25rem;
+   color: #121212;
+   font-style: normal;
+   max-width: 36rem;
+
+   span {
+      font-family: 'Bad Script', cursive;
+      line-height: 4.36rem;
+      color: #514A7E;
+   }
+}
+
+.text {
+   font-weight: 300;
+   font-size: 1rem;
+   line-height: 118%;
+   color: #7D7D7D;
+   padding-top: 60px;
+}
+
+.btn {
+   border: 1px solid #514A7E;
+   border-radius: 100%;
+   width: 193px;
+   height: 193px;
+   display: block;
+   margin: 0 auto;
+   position: relative;
+
+   span {
+      display: block;
+      position: absolute;
+      left: 2.31rem;
+      bottom: 5.8rem;
+      font-weight: 600;
+      font-size: 1.25rem;
+      line-height: 1.43rem;
+      color: #514A7E;
+   }
+
+   .arrow {
+      cursor: pointer;
+      position: relative;
+      width: 79px;
+      height: 2px;
+      background-color: #514A7E;
+      margin-left: 4.81rem;
+      margin-top: 1.8rem;
+
+      & div::after {
+         content: '';
+         position: absolute;
+         width: 10px;
+         height: 2px;
+         top: -3px;
+         right: -2px;
+         background-color: #514A7E;
+         transform: rotate(45deg);
+      }
+
+      & div::before {
+         content: '';
+         position: absolute;
+         width: 10px;
+         height: 2px;
+         top: 3px;
+         right: -2px;
+         background-color: #514A7E;
+         transform: rotate(-45deg);
+      }
+   }
+}
+
+.container {
+   width: 1170px;
+   margin: 0 auto;
+   padding-top: 1px;
+}

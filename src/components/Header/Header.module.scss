@@ -1,0 +1,189 @@
+@function prc($pxOne, $pxTwo) {
+   @return #{$pxOne/$pxTwo}*100%;
+}
+
+@function rem($pixels, $standard-size: 16) {
+   @return #{$pixels/$standard-size}rem;
+}
+
+@function em($pixels, $standard-size: 16) {
+   @return #{$pixels/$standard-size}em;
+}
+
+@mixin adaptive-value($property, $pcSize, $mobSize) {
+   $addSize: $pcSize - $mobSize;
+   $maxWidth: $maxWidth - 320;
+   #{$property}: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+@keyframes shadow {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
+}
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   width: 1170px;
+   margin: 0 auto;
+   align-items: center;
+   padding: 56px 0;
+}
+
+.navbar {
+   display: flex;
+   gap: 41.78px;
+   align-items: center;
+}
+
+
+.position {
+   position: relative;
+}
+
+.burger:hover {
+   span {
+      &:nth-child(1) {
+         width: 17px;
+         transition-property: width;
+         transition-duration: 0.3s;
+      }
+
+      &:nth-child(3) {
+         width: 17px;
+         transition-property: width;
+         transition-duration: 0.3s;
+      }
+   }
+}
+
+.burger {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   cursor: pointer;
+   position: relative;
+   z-index: 2;
+   transform: translateX(0);
+   transition-property: transform;
+   transition-duration: 0.5s;
+
+   span {
+      display: block;
+      height: 2px;
+      width: 30px;
+      background-color: black;
+      gap: 15px;
+      transition-property: width;
+      transition-duration: 0.3s;
+
+      &:nth-child(2) {
+         opacity: 1;
+         visibility: visible;
+         transition-property: opacity;
+         transition: duration 1.3s;
+      }
+   }
+
+
+}
+
+.close {
+   transform: translate(230px);
+   transition-property: transform;
+   transition-duration: 0.5s;
+   position: relative;
+   z-index: 7;
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   cursor: pointer;
+
+
+
+   span {
+      background-color: white;
+      display: block;
+      height: 2px;
+      width: 30px;
+      gap: 15px;
+
+      &:nth-child(1) {
+         transform: translateY(9.9px) rotate(45deg);
+         transition-property: transform;
+         transition-duration: 0.5s;
+      }
+
+      &:nth-child(3) {
+         transform: translateY(-9.9px) rotate(-45deg);
+         transition-property: transform;
+         transition-duration: 0.5s;
+      }
+
+      &:nth-child(2) {
+         opacity: 0;
+         visibility: hidden;
+         transition-property: visibility;
+         transition-duration: 0.3s;
+      }
+
+   }
+}
+
+.form__input {
+   width: rem(308);
+   padding: 0 0 5px 0;
+   border: none;
+   border-bottom: 0.5px solid #7D7D7D;
+   background-color: transparent;
+   outline: none;
+   transition: 0.2s;
+   color: black;
+}
+
+.search {
+   display: flex;
+   gap: 22.71px;
+}
+
+.form__group {
+   position: relative;
+}
+
+.form__lable {
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   transition: 0.2s;
+   color: #7D7D7D;
+}
+
+//при фокусе нижний бордер меняет цвет
+.form__input:focus {
+   border-bottom: 1px solid #1a73a8;
+}
+
+//при фокусе подсказка уезжает наверх
+.form__input:focus~.form__lable,
+.form__input:not(:placeholder-shown)~.form__lable {
+   top: -18px;
+   font-size: 14px;
+   color: #1a73a8;
+}
+
+.icons {
+   display: flex;
+   gap: rem(18.89);
+   max-height: 20px;
+
+   img:hover {
+      background-color: black;
+      color: white;
+   }
+}

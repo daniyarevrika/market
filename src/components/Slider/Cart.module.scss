@@ -1,0 +1,89 @@
+.cartinfo {
+   display: flex;
+   justify-content: space-between;
+   padding-top: 0.81rem;
+}
+
+// .gap {
+//    padding: 0 22.5px;
+// }
+
+// .hoveffect {
+//    border: 1px solid #7D7D7D;
+//    width: 19.37rem;
+//    border-radius: 20px;
+//    display: flex;
+//    flex-shrink: 0;
+// }
+
+.dressname {
+   font-weight: 500;
+   font-size: 13px;
+   line-height: 14px;
+   color: #7D7D7D;
+}
+
+.imgContant {
+   width: 17.37rem;
+   height: 19.75rem;
+
+   img {
+      // border-radius: 20px 20px 0 0;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+   }
+}
+
+
+
+.rightside {
+   padding-top: 13px;
+   display: flex;
+   flex-direction: column;
+   gap: 2.31rem;
+}
+
+
+
+.price {
+   display: flex;
+   align-items: center;
+   gap: 1.43rem;
+}
+
+.leftside {
+   display: flex;
+   flex-direction: column;
+   gap: 0.81rem;
+}
+
+.cart {
+   // max-width: 17.37rem;
+   margin: 0 auto;
+   padding: 15px 0;
+}
+
+.icons {
+   display: flex;
+   justify-content: space-between;
+}
+
+.oldprice {
+   font-weight: 300;
+   font-size: 12px;
+   line-height: 14px;
+   color: #7D7D7D;
+}
+
+.newprice {
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 16px;
+   color: #121212;
+}
+
+.star {
+   width: 7px;
+   height: 7px;
+}

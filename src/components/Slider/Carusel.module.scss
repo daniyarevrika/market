@@ -1,0 +1,38 @@
+.slidblock {
+   margin-top: 3.75rem;
+   overflow: hidden;
+   margin: 0 auto;
+
+}
+
+.slidline {
+   display: flex;
+   transition: transform;
+   transition-property: transform;
+   transition-duration: 400ms;
+}
+
+.posrel {
+   position: relative;
+   width: 100%;
+}
+
+.right {
+   height: 50px;
+   width: 50px;
+   border-radius: 100%;
+   border: 1px solid black;
+   position: absolute;
+   right: -20px;
+   top: 206.83px;
+}
+
+.left {
+   height: 50px;
+   width: 50px;
+   border-radius: 100%;
+   border: 1px solid black;
+   position: absolute;
+   left: -20px;
+   top: 206.83px;
+}

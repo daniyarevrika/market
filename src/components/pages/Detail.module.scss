@@ -1,0 +1,177 @@
+
+
+.activeImg {
+   height: 575px;
+   width: 572px;
+
+   img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+   }
+}
+
+.container {
+   margin: 0 auto;
+   width: 1170px;
+}
+
+.price {
+   font-weight: 300;
+   font-size: 40px;
+   line-height: 87.3%;
+   color: #121212;
+}
+
+.color {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 23px;
+   color: #121212;
+   margin-top: 40px;
+}
+
+.sizeItems {
+   margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   min-width: 30px;
+   min-height: 30px;
+   border: 0.3px solid #514A7E;
+
+   .liter {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      color: #514A7E;
+   }
+
+   .num {
+      font-weight: 300;
+      font-size: 8px;
+      line-height: 9px;
+      color: #7D7D7D;
+   }
+}
+
+.colorRow {
+   display: flex;
+   gap: 5px;
+
+}
+
+.sizeFlex {
+   display: flex;
+   gap: 8px;
+}
+
+.circle {
+   width: 20px;
+   height: 20px;
+   border: 0.3px solid #121212;
+   border-radius: 100%;
+   margin-top: 20px;
+}
+
+.cartBlock {
+   display: flex;
+   gap: 22px;
+   margin-top: 42px;
+   align-items: flex-end;
+}
+
+.heart {
+   img {
+      height: 32px;
+   }
+}
+
+.size {
+   margin-top: 40px;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 23px;
+   color: #121212;
+}
+
+.openSize {
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 21px;
+   color: #514A7E;
+   text-decoration: underline;
+   padding-top: 20px;
+}
+
+.pushCart {
+   background-color: #514A7E;
+
+   .flex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      padding: 14px 30px;
+
+      img {
+         filter: invert(1);
+      }
+   }
+
+   span {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #FFFDF5;
+   }
+}
+
+.feedback {
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 21px;
+   color: #514A7E;
+   margin-top: 21px;
+
+   .seefeedback {
+      padding-right: 20px;
+   }
+
+   button {
+      text-decoration: underline;
+   }
+}
+
+.info {
+   margin-top: 46px;
+}
+
+.description {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 23px;
+   color: #121212;
+   padding-bottom: 20px;
+}
+
+.text {
+   font-weight: 300;
+   font-size: 16px;
+   line-height: 19px;
+   color: #7D7D7D;
+}
+
+.detInfo {
+   display: flex;
+   gap: 113px;
+}
+
+.titleName {
+   font-weight: 300;
+   font-size: 40px;
+   line-height: 87.3%;
+   color: #121212;
+   margin-bottom: 60px;
+}

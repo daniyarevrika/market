@@ -1,0 +1,116 @@
+.titles {
+   display: grid;
+
+   grid-template-rows: 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr;
+
+   gap: 65px;
+   height: 100%;
+
+}
+
+.active {
+   background-color: black;
+   color: white;
+   display: flex;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 23px;
+  
+}
+
+.titleName {
+   font-weight: 300;
+   font-size: 40px;
+   line-height: 87.3%;
+   color: #121212;
+   margin-bottom: 50px;
+}
+
+.sort {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 23px;
+   color: #7D7D7D;
+
+}
+
+.container {
+   width: 1170px;
+   margin: 0 auto;
+   position: relative;
+}
+
+.main {
+   display: flex;
+   gap: 61px;
+   margin-top: 60px;
+}
+
+.filters {
+   padding: 10px 0;
+   display: flex;
+   gap: 65px;
+   position: sticky;
+   top: 0;
+   background-color: #fff;
+   z-index: 5;
+}
+
+.filterTitle {
+   display: flex;
+   gap: 35px;
+
+   .button {
+      display: flex;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      color: #121212;
+   }
+
+   div {
+      display: flex;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      color: #121212;
+   }
+}
+
+.flexelem {
+   width: 146px;
+}
+
+.params {
+   position: sticky;
+   top: 103px;
+
+
+   .price {
+      display: flex;
+      flex-direction: column;
+
+      span {
+         font-weight: 400;
+         font-size: 20px;
+         line-height: 23px;
+         color: #121212;
+
+      }
+   }
+
+   .size {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      color: #121212;
+   }
+
+   .color {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      color: #121212;
+   }
+}

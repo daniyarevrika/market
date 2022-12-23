@@ -1,0 +1,122 @@
+.list {
+   position: relative;
+   margin-top: 5.87rem;
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 118%;
+   color: #7D7D7D;
+
+}
+
+.container {
+   width: 1170px;
+   margin: 0 auto;
+   margin-top: 9.37rem;
+}
+
+.firstrow {
+   display: flex;
+   gap: 6.87rem;
+
+   li:nth-child(3) {
+      position: relative;
+
+      &::after {
+         content: ' ';
+         box-shadow: 0px 4px 10px rgba(81, 74, 126, 0.4);
+         width: 47px;
+         height: 47px;
+         background-color: #514A7E;
+         position: absolute;
+         border-radius: 100%;
+         top: -1.87rem;
+         left: 10.45rem;
+      }
+   }
+
+   li:nth-child(1) {
+      position: relative;
+
+      &::after {
+         content: ' ';
+         box-shadow: 0px 4px 10px rgba(81, 74, 126, 0.4);
+         width: 1.75rem;
+         height: 1.75rem;
+         background-color: #514A7E;
+         position: absolute;
+         border-radius: 100%;
+         left: 6.65rem;
+         top: 0.96rem;
+      }
+   }
+
+   li {
+      max-width: 11.5rem;
+   }
+}
+
+h4 {
+
+   font-weight: 300;
+   font-size: 40px;
+   line-height: 87.3%;
+   color: #121212;
+}
+
+.secondrow {
+   display: flex;
+   padding-left: 8.21rem;
+   gap: 25.62rem;
+   padding-top: 6.21rem;
+
+
+   li:nth-child(1) {
+      position: relative;
+
+      &::after {
+         content: ' ';
+         box-shadow: 0px 4px 10px rgba(81, 74, 126, 0.4);
+         width: 47px;
+         height: 47px;
+         background-color: #514A7E;
+         position: absolute;
+         border-radius: 100%;
+         top: 0.93rem;
+         left: 9.45rem;
+      }
+   }
+
+   li:nth-child(2) {
+      position: relative;
+
+      &::after {
+         content: ' ';
+         box-shadow: 0px 4px 10px rgba(81, 74, 126, 0.4);
+         width: 1.75rem;
+         height: 1.75rem;
+         background-color: #514A7E;
+         position: absolute;
+         border-radius: 100%;
+         left: 10.25rem;
+         top: -0.56rem;
+      }
+   }
+
+   li {
+      max-width: 11.25rem;
+   }
+}
+
+.btn {
+   width: 4.5rem;
+   height: 4.5rem;
+   border-radius: 100%;
+   background-color: #514A7E;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   right: 0;
+   top: 9.43rem;
+   filter: drop-shadow(0px 4px 10px rgba(81, 74, 126, 0.4));
+}
